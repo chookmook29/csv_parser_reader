@@ -5,6 +5,8 @@ total_average = 0
 odds = input('seached odds?')
 while question != 'n':
 	filename = input('your filename?')
+	odds_column = input('which odds column?')
+	odds_column = int(odds_column)
 	examplefile = open(filename)
 	examplereader = csv.reader(examplefile)
 	exampledata = list(examplereader)
@@ -13,7 +15,7 @@ while question != 'n':
 	j = 0
 	successes = 0
 	while i < int(test_limit):
-		tested_cell = exampledata[i][22]
+		tested_cell = exampledata[i][odds_column]
 		tested_other_cell = exampledata[i][6]
 		if odds in tested_cell:
 			j+=1
