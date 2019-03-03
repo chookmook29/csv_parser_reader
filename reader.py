@@ -29,10 +29,13 @@ while question != 'n':
 			i+=1
 	print(j)
 	print('Successes: ' + str(successes))
-	average = j / successes
-	print(average)
-	loop += 1
-	total_average += average
+	if j == 0:
+		print("no samples")
+	else:
+		average = j / successes
+		print(average)
+		loop += 1
+		total_average += average
 	question = input('Continue?')
 	if question == "n":
 		total_average = total_average / loop
