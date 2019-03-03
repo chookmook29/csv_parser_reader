@@ -8,7 +8,7 @@ while question != 'n':
 	examplefile = open(filename)
 	examplereader = csv.reader(examplefile)
 	exampledata = list(examplereader)
-	test_limit = input('your limit?')
+	test_limit = test_limit = len(list(csv.reader(open(filename))))
 	i = 1
 	j = 0
 	successes = 0
