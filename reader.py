@@ -5,6 +5,7 @@ total_average = 0
 odds = input('seached odds?')
 while question != 'n':
 	filename = input('your filename?')
+	filename = filename + ".csv"
 	odds_column = input('which odds column?')
 	odds_column = int(odds_column)
 	examplefile = open(filename)
