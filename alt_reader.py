@@ -1,22 +1,23 @@
-import csv
+aimport csv
 question = 'y'
 loop = 0
 test_limit_total = 0
 total_average = 0
 total_j = 0
-odds = input('seached odds?')
-scope = input('How many seasons? Max 14.')
-scope = int(scope)
+odds = input('searched odds?')
+#scope = input('How many seasons? Max 12.')
+#scope = int(scope)
+scope = 12
 result = input('H, A or D?')
 average_odds = 0
 if result == 'H':
-	odds_column = 23
+	odds_column = 22
 elif result == 'D':
-	odds_column = 24
+	odds_column = 23
 else:
-	odds_column = 25
+	odds_column = 24
 list_number = 0
-filename_list = ['19', '18', '17', '16', '15', '14', '13', '12', '11', '10', '09', '08', '07', '06']
+filename_list = ['19', '18', '17', '16', '15', '14', '13', '12', '11', '10', '09', '08']
 while list_number < scope:
 	filename = filename_list[list_number]
 	filename = filename + ".csv"
@@ -60,6 +61,10 @@ while list_number < scope:
 		total_average += average
 	total_j += j
 	list_number += 1
+	if total_j > 50:
+		break
+	else:
+		continue
 total_average = total_average / loop
 percentage_chance = 100 / total_average
 print('Total found: ' + str(total_j))
