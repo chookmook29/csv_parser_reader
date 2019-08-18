@@ -1,0 +1,6 @@
+A Odds: 2.3 True: 2.34 Percentage: 42.74
+H Odds: 2.3 True: 3.1 Percentage: 32.26
+H Odds: 1.8 True: 1.93 Percentage: 51.81
+A Odds: 2.1 True: 3.47 Percentage: 28.82
+H Odds: 1.8 True: 1.93 Percentage: 51.81
+H Odds: 2.3 True: 3.1 Percentage: 32.26
